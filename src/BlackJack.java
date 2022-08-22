@@ -27,7 +27,6 @@ public class BlackJack {
 
         mostrarArrayString(mano);
         pedirCarta(baraja, mano);
-        mostrarArrayString(mano);
 
 
 
@@ -75,7 +74,7 @@ public class BlackJack {
     }
 
     public static void pedirCarta(String[][] baraja, String[] manoActual){
-        List <String> manoNewLista = new ArrayList<>();
+        List <String> manoNewLista = new ArrayList<String>();
         System.out.println("manoNewLista = " + manoNewLista);
         manoNewLista = Arrays.asList(manoActual);
         System.out.println("manoNewLista = " + manoNewLista);
@@ -91,8 +90,8 @@ public class BlackJack {
         manoNewLista.add(nuevaCarta);
 
         //crear de nuevo la mano en formato array
-        //String[] mano = new String[manoNewLista.size()];
-        //mano = manoNewLista.toArray(mano);
+        String[] mano = new String[manoNewLista.size()];
+        mano = manoNewLista.toArray(mano);
 
     }
 
